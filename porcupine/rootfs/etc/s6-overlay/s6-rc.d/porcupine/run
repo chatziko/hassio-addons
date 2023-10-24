@@ -1,0 +1,17 @@
+#!/command/with-contenv bashio
+# shellcheck shell=bash
+# ==============================================================================
+# Start porcupine service
+# ==============================================================================
+flags=()
+
+if bashio::config.true 'debug_logging'; then
+    flags+=('--debug')
+fi
+
+export HOME=/data
+
+exec python3 -m wyoming_porcupine \
+    --uri 'tcp://0.0.0.0:10400' \
+    --access-key "$(bashio::config 'access_key')" \
+    --sensitivity "$(bashio::config 'sensitivity')" ${flags[@]}

@@ -1,0 +1,23 @@
+---
+version: 1.0.0
+slug: porcupine
+name: porcupine
+description: porcupine using the Wyoming protocol
+url: https://github.com/chatziko/hassio-addons/tree/main/porcupine
+arch:
+  - amd64
+  - aarch64
+  - armv7
+init: false
+discovery:
+  - wyoming
+options:
+  sensitivity: 0.5
+  debug_logging: false
+schema:
+  sensitivity: float
+  access_key: str
+  debug_logging: bool
+ports:
+  "10400/tcp": null
+homeassistant: 2023.9.0
