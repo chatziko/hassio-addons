@@ -1,5 +1,5 @@
 ---
-version: 1.0.0
+version: 1.0.1
 slug: porcupine
 name: porcupine
 description: porcupine using the Wyoming protocol
@@ -11,6 +11,8 @@ arch:
 init: false
 discovery:
   - wyoming
+map:
+  - share:ro
 options:
   sensitivity: 0.5
   debug_logging: false
