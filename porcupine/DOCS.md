@@ -11,7 +11,7 @@ Follow these steps to get the add-on installed on your system:
 
 ## Access key and usage restrictions
 
-This add-on uses porcupine v2 which needs an **access key** to function. You need to create it (for free)
+This add-on uses porcupine v3 which needs an **access key** to function. You need to create it (for free)
 from [Picovoice Console](https://console.picovoice.ai/) and insert it in the configuration page before
 starting the add-on.
 
